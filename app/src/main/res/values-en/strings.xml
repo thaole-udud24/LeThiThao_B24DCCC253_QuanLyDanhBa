@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contacts</string>
+
+    <string name="login_title">Login here</string>
+    <string name="login_subtitle">Welcome back, you have been missed!</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Sign in</string>
+    <string name="login_demo">Demo account: admin / 123456</string>
+    <string name="error_login_empty">Please fill in all fields</string>
+    <string name="error_login_invalid">Wrong username or password</string>
+    <string name="cd_toggle_password">Show or hide password</string>
+
+    <string name="main_title">Contacts</string>
+    <string name="main_subtitle">Manage your people</string>
+    <string name="greeting">Hello, %1$s!</string>
+    <string name="stat_total">Total contacts</string>
+    <string name="stat_favorite">Favorites</string>
+    <string name="hint_search">Search by name or phone</string>
+    <string name="filter_all">All</string>
+    <string name="filter_favorite">Favorites</string>
+    <string name="sort_az">Sort A → Z</string>
+    <string name="sort_favorite_first">Favorites first</string>
+    <string name="empty_title">No contacts yet</string>
+    <string name="empty_message">Tap + to add your first contact</string>
+    <string name="cd_add">Add contact</string>
+    <string name="cd_logout">Sign out</string>
+    <string name="cd_sort">Sort</string>
+    <string name="cd_toggle_favorite">Toggle favorite</string>
+    <string name="msg_deleted">Deleted %1$s</string>
+    <string name="msg_saved">Saved %1$s</string>
+    <string name="action_undo">Undo</string>
+
+    <string name="group_family">Family</string>
+    <string name="group_friends">Friends</string>
+    <string name="group_work">Work</string>
+    <string name="group_other">Other</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+
+    <string name="add_title">Add contact</string>
+    <string name="edit_title">Edit contact</string>
+    <string name="hint_name">Full name</string>
+    <string name="hint_phone">Phone number</string>
+    <string name="hint_note">Note (optional)</string>
+    <string name="label_group">Group</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_favorite">Favorite</string>
+    <string name="btn_save">Save</string>
+    <string name="add_subtitle">Fill in the information below</string>
+    <string name="placeholder_name">Enter full name</string>
+    <string name="placeholder_phone">Enter phone number</string>
+    <string name="placeholder_note">Enter note...</string>
+    <string name="error_name_empty">Name must not be empty</string>
+    <string name="error_phone_format">Phone must be 10 digits and start with 0</string>
+    <string name="error_phone_duplicate">Phone number already exists</string>
+    <string name="discard_title">Discard changes?</string>
+    <string name="discard_message">You have unsaved data. Leaving will lose these changes.</string>
+    <string name="btn_discard">Discard</string>
+    <string name="btn_keep_editing">Keep editing</string>
+
+    <string name="detail_title">Contact details</string>
+    <string name="action_call">Call</string>
+    <string name="action_favorite">Favorite</string>
+    <string name="action_sms">Message</string>
+    <string name="action_delete">Delete</string>
+    <string name="btn_back">Back</string>
+    <string name="no_note">No note</string>
+    <string name="delete_title">Delete contact?</string>
+    <string name="delete_message">Are you sure you want to delete %1$s?</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="msg_copied">Phone number copied</string>
+    <string name="error_no_app">No suitable app found</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_edit">Edit contact</string>
+</resources>

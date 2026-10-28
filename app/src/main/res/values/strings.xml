@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Danh bạ</string>
+
+    <!-- Đăng nhập -->
+    <string name="login_title">Đăng nhập</string>
+    <string name="login_subtitle">Chào mừng bạn quay lại!</string>
+    <string name="hint_username">Tên đăng nhập</string>
+    <string name="hint_password">Mật khẩu</string>
+    <string name="btn_login">Đăng nhập</string>
+    <string name="login_demo">Tài khoản demo: admin / 123456</string>
+    <string name="error_login_empty">Vui lòng nhập đầy đủ thông tin</string>
+    <string name="error_login_invalid">Sai tên đăng nhập hoặc mật khẩu</string>
+    <string name="cd_toggle_password">Ẩn hoặc hiện mật khẩu</string>
+
+    <!-- Danh sách -->
+    <string name="main_title">Danh bạ</string>
+    <string name="main_subtitle">Quản lý liên hệ của bạn</string>
+    <string name="greeting">Xin chào, %1$s!</string>
+    <string name="stat_total">Tổng liên hệ</string>
+    <string name="stat_favorite">Yêu thích</string>
+    <string name="hint_search">Tìm theo tên hoặc SĐT</string>
+    <string name="filter_all">Tất cả</string>
+    <string name="filter_favorite">Yêu thích</string>
+    <string name="sort_az">Sắp xếp A → Z</string>
+    <string name="sort_favorite_first">Yêu thích lên đầu</string>
+    <string name="empty_title">Chưa có liên hệ</string>
+    <string name="empty_message">Bấm nút + để thêm liên hệ đầu tiên</string>
+    <string name="cd_add">Thêm liên hệ</string>
+    <string name="cd_logout">Đăng xuất</string>
+    <string name="cd_sort">Sắp xếp</string>
+    <string name="cd_toggle_favorite">Đổi trạng thái yêu thích</string>
+    <string name="msg_deleted">Đã xóa %1$s</string>
+    <string name="msg_saved">Đã lưu %1$s</string>
+    <string name="action_undo">Hoàn tác</string>
+
+    <!-- Nhóm & giới tính -->
+    <string name="group_family">Gia đình</string>
+    <string name="group_friends">Bạn bè</string>
+    <string name="group_work">Công việc</string>
+    <string name="group_other">Khác</string>
+    <string name="gender_male">Nam</string>
+    <string name="gender_female">Nữ</string>
+    <string name="gender_other">Khác</string>
+
+    <!-- Thêm / sửa -->
+    <string name="add_title">Thêm liên hệ</string>
+    <string name="edit_title">Sửa liên hệ</string>
+    <string name="hint_name">Họ và tên</string>
+    <string name="hint_phone">Số điện thoại</string>
+    <string name="hint_note">Ghi chú (không bắt buộc)</string>
+    <string name="label_group">Nhóm</string>
+    <string name="label_gender">Giới tính</string>
+    <string name="label_favorite">Yêu thích</string>
+    <string name="btn_save">Lưu</string>
+    <string name="add_subtitle">Điền thông tin bên dưới</string>
+    <string name="placeholder_name">Nhập họ và tên</string>
+    <string name="placeholder_phone">Nhập số điện thoại</string>
+    <string name="placeholder_note">Nhập ghi chú...</string>
+    <string name="error_name_empty">Họ tên không được để trống</string>
+    <string name="error_phone_format">SĐT phải gồm 10 chữ số và bắt đầu bằng 0</string>
+    <string name="error_phone_duplicate">Số điện thoại đã tồn tại</string>
+    <string name="discard_title">Bỏ thay đổi?</string>
+    <string name="discard_message">Bạn có dữ liệu chưa lưu. Thoát sẽ mất các thay đổi này.</string>
+    <string name="btn_discard">Bỏ</string>
+    <string name="btn_keep_editing">Tiếp tục nhập</string>
+
+    <!-- Chi tiết -->
+    <string name="detail_title">Chi tiết liên hệ</string>
+    <string name="action_call">Gọi</string>
+    <string name="action_favorite">Yêu thích</string>
+    <string name="action_sms">Nhắn tin</string>
+    <string name="action_delete">Xóa</string>
+    <string name="btn_back">Quay lại</string>
+    <string name="no_note">Không có ghi chú</string>
+    <string name="delete_title">Xóa liên hệ?</string>
+    <string name="delete_message">Bạn có chắc muốn xóa %1$s?</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="msg_copied">Đã sao chép số điện thoại</string>
+    <string name="error_no_app">Không tìm thấy ứng dụng phù hợp</string>
+    <string name="cd_back">Quay lại</string>
+    <string name="cd_edit">Sửa liên hệ</string>
+</resources>

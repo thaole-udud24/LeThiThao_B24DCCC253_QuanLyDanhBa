@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">32dp</dimen>
+    <dimen name="icon_circle">64dp</dimen>
+    <dimen name="main_max_width">720dp</dimen>
+    <dimen name="logo_size">88dp</dimen>
+    <dimen name="avatar_size">60dp</dimen>
+    <dimen name="avatar_large">112dp</dimen>
+    <dimen name="ring_size">128dp</dimen>
+    <dimen name="text_headline">34sp</dimen>
+    <dimen name="text_title">24sp</dimen>
+    <dimen name="text_stat">56sp</dimen>
+    <dimen name="avatar_text">24sp</dimen>
+    <dimen name="avatar_large_text">46sp</dimen>
+</resources>

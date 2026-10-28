@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nền & bề mặt -->
+    <color name="background">#FAF9FC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="field">#F5F5FA</color>
+    <color name="stroke">#E6E3F0</color>
+
+    <!-- Chữ: đậm, tương phản cao với nền sáng -->
+    <color name="ink">#1D2140</color>
+    <color name="ink_soft">#5A5E7A</color>
+    <color name="muted">#9094AB</color>
+
+    <!-- Màu nhấn cam -->
+    <color name="accent">#F36A32</color>
+    <color name="accent_end">#FF8A5B</color>
+    <color name="accent_soft">#FFEDE3</color>
+    <color name="accent_mid">#FFD3BD</color>
+    <color name="ripple">#33FFFFFF</color>
+
+    <!-- Trạng thái -->
+    <color name="error">#E5484D</color>
+    <color name="error_container">#FDE8E8</color>
+    <color name="star">#F36A32</color>
+
+    <!-- Màu theo nhóm: nền nhạt + màu chữ/icon đậm -->
+    <color name="family_soft">#FDE3EA</color>
+    <color name="family_accent">#D93A63</color>
+    <color name="friends_soft">#E9E8FD</color>
+    <color name="friends_accent">#5249D1</color>
+    <color name="work_soft">#FFE9DD</color>
+    <color name="work_accent">#E8571F</color>
+    <color name="other_soft">#DDF3EE</color>
+    <color name="other_accent">#12806D</color>
+
+    <!-- Pastel cho các nút tròn ở màn chi tiết -->
+    <color name="pastel_pink">#FBD3E3</color>
+    <color name="pastel_peach">#FFE0CC</color>
+    <color name="pastel_lavender">#DDDCFB</color>
+    <color name="pastel_blue">#CFE6FA</color>
+
+    <!-- Thẻ thống kê -->
+    <color name="hero_bg">#FFE8DB</color>
+    <color name="hero_blob">#FFD6C1</color>
+    <color name="ring_track">#FFCDB5</color>
+</resources>

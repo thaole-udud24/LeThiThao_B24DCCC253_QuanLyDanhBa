@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/screen_padding">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_max="@dimen/content_max_width">
+
+            <!-- Thanh trên -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    style="@style/Widget.App.IconButton"
+                    android:contentDescription="@string/cd_back" />
+
+                <TextView
+                    style="@style/TextAppearance.App.Title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/detail_title"
+                    android:textSize="18sp" />
+
+                <ImageButton
+                    android:id="@+id/btnEdit"
+                    style="@style/Widget.App.IconButton"
+                    android:contentDescription="@string/cd_edit" />
+            </LinearLayout>
+
+            <!-- Thẻ pastel (màu theo nhóm, gán trong code): avatar lớn + tên -->
+            <LinearLayout
+                android:id="@+id/heroCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:background="@drawable/bg_card_solid"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="@dimen/space_l">
+
+                <TextView
+                    android:id="@+id/tvAvatar"
+                    style="@style/TextAppearance.App.Headline"
+                    android:layout_width="@dimen/avatar_large"
+                    android:layout_height="@dimen/avatar_large"
+                    android:background="@drawable/bg_circle"
+                    android:gravity="center"
+                    android:importantForAccessibility="no"
+                    app:autoSizeMaxTextSize="@dimen/avatar_large_text"
+                    app:autoSizeMinTextSize="16sp"
+                    app:autoSizeStepGranularity="1sp"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextAppearance.App.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_m"
+                    android:gravity="center"
+                    android:maxLines="2" />
+
+                <TextView
+                    android:id="@+id/tvGroupChip"
+                    style="@style/TextAppearance.App.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_s"
+                    android:background="@drawable/bg_chip"
+                    android:drawablePadding="@dimen/space_xs"
+                    android:textStyle="bold"
+                    android:paddingStart="@dimen/space_m"
+            android:paddingEnd="@dimen/space_m"
+                    android:paddingTop="@dimen/space_xs"
+            android:paddingBottom="@dimen/space_xs"
+                    android:textColor="@color/ink" />
+            </LinearLayout>
+
+            <!-- Hàng nút tròn: Gọi / Yêu thích / Nhắn tin / Xóa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnCall"
+                        android:layout_width="@dimen/icon_circle"
+                        android:layout_height="@dimen/icon_circle"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/pastel_blue"
+                        android:contentDescription="@string/action_call"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="center" />
+
+                    <TextView
+                        style="@style/TextAppearance.App.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:text="@string/action_call" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnFavoriteAction"
+                        android:layout_width="@dimen/icon_circle"
+                        android:layout_height="@dimen/icon_circle"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/pastel_peach"
+                        android:contentDescription="@string/action_favorite"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="center" />
+
+                    <TextView
+                        style="@style/TextAppearance.App.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:text="@string/action_favorite" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnSms"
+                        android:layout_width="@dimen/icon_circle"
+                        android:layout_height="@dimen/icon_circle"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/pastel_lavender"
+                        android:contentDescription="@string/action_sms"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="center" />
+
+                    <TextView
+                        style="@style/TextAppearance.App.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:text="@string/action_sms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/btnDelete"
+                        android:layout_width="@dimen/icon_circle"
+                        android:layout_height="@dimen/icon_circle"
+                        android:background="@drawable/bg_circle"
+                        android:backgroundTint="@color/error_container"
+                        android:contentDescription="@string/action_delete"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+                        android:scaleType="center" />
+
+                    <TextView
+                        style="@style/TextAppearance.App.Caption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_xs"
+                        android:text="@string/action_delete" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Thông tin chi tiết -->
+            <com.google.android.material.card.MaterialCardView
+                style="@style/Widget.App.Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_m">
+
+                    <LinearLayout
+                        android:id="@+id/rowPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/icon_circle"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_s">
+
+                        <ImageView
+                            android:id="@+id/imgPhone"
+                            style="@style/Widget.App.InfoIcon"
+                            android:backgroundTint="@color/pastel_blue" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_m"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hint_phone" />
+
+                            <TextView
+                                android:id="@+id/tvPhone"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/icon_circle"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_s">
+
+                        <ImageView
+                            android:id="@+id/imgGroup"
+                            style="@style/Widget.App.InfoIcon"
+                            android:backgroundTint="@color/pastel_pink" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_m"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_group" />
+
+                            <TextView
+                                android:id="@+id/tvGroup"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/icon_circle"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_s">
+
+                        <ImageView
+                            android:id="@+id/imgGender"
+                            style="@style/Widget.App.InfoIcon"
+                            android:backgroundTint="@color/pastel_lavender" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_m"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/label_gender" />
+
+                            <TextView
+                                android:id="@+id/tvGender"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:minHeight="@dimen/icon_circle"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_s">
+
+                        <ImageView
+                            android:id="@+id/imgNote"
+                            style="@style/Widget.App.InfoIcon"
+                            android:backgroundTint="@color/pastel_peach" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/space_m"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/TextAppearance.App.Caption"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hint_note" />
+
+                            <TextView
+                                android:id="@+id/tvNote"
+                                style="@style/TextAppearance.App.Body"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <com.google.android.material.checkbox.MaterialCheckBox
+                        android:id="@+id/cbFavorite"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="@dimen/touch_min"
+                        android:text="@string/label_favorite" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBackBottom"
+                style="@style/Widget.App.Button.Outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_l"
+                android:text="@string/btn_back" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Số cột danh sách; ghi đè theo qualifier ở values-land, values-sw600dp... -->
+    <integer name="list_columns">1</integer>
+</resources>
