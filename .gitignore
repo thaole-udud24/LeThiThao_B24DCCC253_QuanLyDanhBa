@@ -13,6 +13,4 @@ captures/
 .env
 ~$*
 GIT_PUSH_RULES.md
-*.docx
-*.doc
-docs/
+
